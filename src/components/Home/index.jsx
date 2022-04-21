@@ -5,9 +5,6 @@ const { Header  } = Layout;
 const { Search } = Input;
 
 const Home = () => {
-    const showDrawer = () => {
-
-    }
 
     const onSearch = () => {
 
@@ -102,7 +99,7 @@ const Home = () => {
         <Layout>
            <Header className="nav-header">
             <div className="left-items">
-            <a href="#"><img src="images/main.png"/></a>
+            <img alt="logo" src="images/main.png"/>
             <Search className="search" placeholder="input search text" onSearch={onSearch} />
             </div>
             <Menu mode="horizontal" className="menu-class" inlineCollapsed={false} defaultOpenKeys={['restaurants','deals','myorders']} >
@@ -139,7 +136,7 @@ const Home = () => {
                 {categories.map((category) => {
                     return(
                         <Card className="category-card">
-                            <img src={`images/emoji/${category.iconPath}`}></img>
+                            <img  alt="category" src={`images/emoji/${category.iconPath}`}></img>
                             <div className="category-label">{category.label}</div>
                         </Card>
                     )
@@ -153,28 +150,29 @@ const Home = () => {
                         return(
                             <Card className="restaurant-card">
                                 <div>
-                                <img src={`images/card-images/img${index !== 0? index+1: 1 }.png`} />
+                                <img alt="restaurant" src={`images/card-images/img${index !== 0? index+1: 1 }.png`} />
                                 <div className="featured">Featured</div>
                                 </div>
                                 <div className="rest-details">
                                 <div className="rest-title">{restraunt.name}</div>
                                 <div>
                                     <div>
-                                    <img className="clock" src='/images/card-images/clock.png' />
+                                    <img alt="clock" className="clock" src='/images/card-images/clock.png' />
                                     <span className="rest-subtitle">{restraunt.deliveryTime}</span>
                                     <span className="rest-subtitle">{restraunt.price} min sum</span>
                                     </div>
                                 </div>
                                 {
                                     restraunt.categories.map((c) => {
-                                    return <div>{categories.map((category) => {
+                                    // eslint-disable-next-line
+                                    return categories.map((category) => { 
                                         if(c === category.key){
                                             return (<div className="badge">
-                                            <img className="clock" src={`/images/emoji/${category.iconPath}`} />
+                                            <img alt="clock" className="clock" src={`/images/emoji/${category.iconPath}`} />
                                             <span style={{marginLeft: '3px',color:'#83859C'}}>{category.label}</span>
                                             </div>)
                                         }
-                                    })}</div>
+                                    })
                                     })
                                 }
                                 </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button, Form, Input, Checkbox, Divider, Rate, Card } from 'antd'
-import { Footer } from 'antd/lib/layout/layout';
 
 const Login = () => {
   const navigate=useNavigate()
@@ -67,13 +66,13 @@ const Login = () => {
         <Divider></Divider>
         </Card>
         <Card className="other-container">
-          <img className="other-img" src="/images/card-images/other.png" />
+          <img alt="other-img" className="other-img" src="/images/card-images/other.png" />
             <div className="other-title">Roll Set</div>
             <div className="other-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, modi! Voluptate repellat at pariatur recusandae</div>
             <div className="other-price">$22.46</div>
         </Card>
         <Card className="other-container-bottom">
-            <img className="other-img-bottom" src="/images/card-images/other.png" />
+            <img alt="banner" className="other-img-bottom" src="/images/card-images/other.png" />
             <div className="details-container">
             <div className="other-title-bottom">Roll Set</div>
             <div className="other-description-bottom">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, modi! Voluptate repellat at pariatur recusandae</div>
