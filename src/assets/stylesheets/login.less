@@ -1,0 +1,260 @@
+.main-container{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+}
+.login-container{
+    display: flex;
+    flex: 0.8;
+    background: white;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .login-heading{
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .login-form{
+        margin-top: 20px;
+        width: 350px;
+
+        .login-subheading {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            color: #545563;
+            margin: 10px 0px;
+        }
+
+        .login-check{
+            font-weight: 400;
+            font-size: 14px;
+            color:#2B2B43
+        }
+
+        .login-form-button{
+            width:350px;
+            height:44px;
+            background: #4E60FF;
+            box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+            border-radius: 8px;
+        }
+        .forgot-password{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 16px;
+            color:#4E60FF;
+            font-style: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+
+    .signup-text{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1px;
+        position: fixed;
+        bottom: 15px;
+
+        span{
+            color:#4E60FF;
+            cursor: pointer;
+            margin-left: 2px;
+        }
+    }
+
+}
+
+.media-container{
+    display: flex;
+    flex:1;
+    background: #697BFF;
+
+    .footer{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 5px;
+        margin-left: 50px;
+        h4{
+            color: white;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
+        }
+        h6{
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;          
+            text-align: center;
+            letter-spacing: 0.1px;
+        }
+    }
+
+    .other-container{
+        width:294px;
+        height:279px;
+        background: #FFFFFF;
+        border: 0.84px solid #EDEEF2;
+        box-sizing: border-box;
+        border-radius: 13.44px;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        .other-title{
+            font-weight: 700;
+            font-size: 15.12px;
+            line-height: 20px;           
+            letter-spacing: 0.084px;
+            color: #2B2B43;
+            margin-top: 5px;
+        }
+        .other-description{
+            font-weight: 400;
+            font-size: 10.92px;
+            line-height: 15px;
+            letter-spacing: 0.168px;
+            color: #83859C;
+        }
+        .other-price{
+            font-weight: 800;
+            font-size: 20.16px;
+            line-height: 27px;
+            letter-spacing: 0.084px;
+            margin-top: 5px;
+            color: #2B2B43;
+        }
+        .other-img{
+            width: 267.12px;
+            height: 151.32px;
+        }
+    }
+    .other-container-bottom{
+        width:618px;
+        height:132px;
+        position: absolute;
+        bottom:150px;
+        background: #FFFFFF;
+        border: 0.84px solid #EDEEF2;
+        border-radius: 13.44px;
+        margin-left: 50px;
+        display: flex;
+        filter: drop-shadow(0px 0px 80px rgba(49, 57, 120, 0.4));
+        .ant-card-body {
+            display: flex;
+            flex:1;
+            justify-content: center;
+            align-items: center;
+            .details-container{
+                display: flex;
+                flex:1;
+                flex-direction: column;
+                margin-left: 10px;
+                .other-title-bottom{
+                    font-weight: 700;
+                    font-size: 15.12px;
+                    line-height: 20px;           
+                    letter-spacing: 0.084px;
+                    color: #2B2B43;
+                    margin-top: 5px;
+                }
+                .other-description-bottom{
+                    font-weight: 400;
+                    font-size: 10.92px;
+                    line-height: 15px;
+                    letter-spacing: 0.168px;
+                    color: #83859C;
+                }
+                .other-price-bottom{
+                    font-weight: 800;
+                    font-size: 20.16px;
+                    line-height: 27px;
+                    letter-spacing: 0.084px;
+                    margin-top: 5px;
+                    color: #2B2B43;
+                }
+            }
+        }
+        .other-price-container{
+        display: flex;
+        flex:1;
+        flex-direction: row;
+
+        .other-price-container-bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            span{
+                background: #EDEEF2;
+                opacity: 0.5;
+                border-radius: 6.7726px;
+                height: 16px;
+                width:16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .btn-price{
+                height: 37px;
+                width: 112px;
+                border-radius: 6px;
+                padding: 10px, 14px, 10px, 14px;
+                background: #F3F4FF;
+                border-radius: 6.7726px;         
+            }
+        }
+        }
+        .other-img-bottom{
+            display: flex;
+            flex:1;
+            height: 104.90px;
+            width: 152.382px;
+            border-radius: 10.15px;
+            
+        }
+    }
+
+
+    .review-container{
+        background: #FFFFFF;
+        border: 0.894286px solid #EDEEF2;
+        box-sizing: border-box;
+        border-radius: 14.3086px;
+        height: 436.41143798828125px;
+        width: 313px;
+        margin-left:100px;
+    }
+    .review-header{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 11.6257px;
+            line-height: 16px;
+            letter-spacing: 0.0894286px;
+            color: #2B2B43;
+        }
+        ul.ant-rate.star-rating{
+            color:#4E60FF
+        }
+    }
+}

@@ -1,0 +1,289 @@
+.nav-header{
+    background: white;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+
+    .left-items{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .search{
+            margin-left: 20px;
+            border-radius: 12px;
+            width:224px;
+            .ant-input{
+                border-radius: 4px;
+                background: #EDEEF2;
+            }
+            button.ant-btn.ant-btn-default.ant-btn-icon-only.ant-input-search-button{
+                border-left: none;
+                border-radius: 4px;
+                background: #EDEEF2;
+            }
+        }
+    }
+
+    .avtar{
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+    }
+    .cart{
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F3F4FF;
+        border:1px solid #4E60FF;
+        border-radius: 16px;
+        margin-right: 10px;
+        .cart-img{
+            width: 20px;
+            height: 20px;
+        }
+        .badge-count{
+            width: 16px;
+            height: 14px;
+            background: #4E60FF;
+            border-radius: 8px;
+            top:0px;
+            right:100px;
+            position: absolute;
+        }
+    }
+    .menu-class{
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: right;
+        letter-spacing: 0.1px;
+    }
+}
+.main-banner{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    justify-content: center;
+    .home-banner-left{
+        width:540px;
+        height:200px;
+        padding: 30px;
+        background: #F3F4FF;
+        border-radius: 16px;
+        margin:30px;
+
+        .banner-img-left{
+            position: absolute;
+            width: 290px;
+            height: 188px;
+            left: 0px;
+            top: 0px;       
+        }
+
+        .banner-content-left{
+            float: right;
+            margin-right: 10%;
+
+            h4{
+                font-weight: 500;
+                font-size: 20px;
+                margin:0;
+            }
+
+            h2{
+                color: #4E60FF;
+                font-weight:800;
+                font-size: 40px;
+            }
+
+            h6{
+                color:#83859C;
+                font-size: 14px;
+            }
+        }
+
+    } 
+
+    .home-banner-right{
+        width:540px;
+        height:200px;
+        padding: 30px;
+        background: #FFF3ED;
+        border-radius: 16px;
+        margin:30px;
+
+        .banner-img-left{
+            position: absolute;
+            width: 290px;
+            height: 188px;
+            left: 0px;
+            top: 0px;       
+        }
+
+        .banner-content-right{
+            float: right;
+            margin-right: 5%;
+
+            h4{
+                font-weight: 500;
+                font-size: 20px;
+                margin:0;
+            }
+
+            h2{
+                color: #FD6D22;
+                font-weight:800;
+                font-size: 40px;
+            }
+
+            h6{
+                color:#83859C;
+                font-size: 14px;
+            }
+        }
+
+    } 
+}
+
+.categories-row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+
+    .category-card{
+        width: 160px;
+        height: 80px;
+        background: #FFFFFF;
+        border: 1px solid #EDEEF2;
+        box-sizing: border-box;
+        border-radius: 16px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        &:hover{
+            background: #F8F9FF;
+            border: 1px solid #697BFF;
+        }
+        &::selection{
+            background: #F3F4FF;
+            border: 2px solid #4E60FF;
+        }
+    }
+    .category-label{
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #545563;
+    }
+    .img{
+        width:24px;
+        height: 24px;
+    }
+}
+
+.restaurant-section{
+    margin: 20px 110px;
+
+    .title{
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+        color: #2B2B43;
+    }
+
+    .restaurant-list{
+        display: flex;
+        flex:1;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .restaurant-card{
+            width:350px;
+            height: 276px;
+            background: #FFFFFF;
+            border: 1px solid #EDEEF2;
+            box-sizing: border-box;
+            border-radius: 16px;
+            margin: 10px;
+            background-attachment: fixed;
+            background-size: cover;
+
+            .rest-details{
+                padding: 10px;
+                .rest-title{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: 0.1px;
+                    color: #2B2B43;
+                }
+                .rest-subtitle{
+                    color: rgb(131, 133, 156);
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+            }
+
+            .ant-card-body{
+                padding: 0px;
+            }
+
+            img{
+                width:350px;
+                height:160px;
+                border-radius: 16px 16px 0px 0px;
+            }
+
+            .featured{
+                background: #4E60FF;
+                border-radius: 0px 16px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 5px;
+                color:white;
+            }
+            .clock{
+                width:12px;
+                height:12px;
+                margin-right: 2px;
+            }
+
+
+            .badge{
+                background: #EDEEF2;
+                border-radius: 100px;
+                width: 70px;
+                height: 24px;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 5px;
+                left: 11px;
+            }
+        }
+    }
+
+}
+
+
+
+
